@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: sedona</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+  </head>
+  <body>
+      <header>
+          <div>
+               <!-- logo -->
+               <img src="http://placehold.it/138x70" width="138" height="70" alt="">
+              
+          </div>
+          <div>
+               <!-- menu -->
+               <img src="http://placehold.it/23x22" width="23" height="22" alt="">
+               <nav>
+                    <ul>
+                        <li><a href="#">ИНФОРМАЦИЯ</a></li>
+                        <li><a href="#">ФОТО И ВИДЕО</a></li>
+                        <li><a href="#">КАРТА ШТАТА</a></li>
+                        <li><a href="#">ГОСТИНИЦЫ</a></li>
+                    </ul>
+               </nav>
+          </div>
+      </header>
+      
+    <div>
+    
+        <div>
+            <div>
+                
+                <img src="img/SEDONA.png" width="280" height="48" alt="Sedona">
+
+            </div>
+            <!-- For CSS: src="img/background-photo.png" width="320" height="512" -->
+        </div>
+
+
+        <div>
+            <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+            <p>ПОМГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
+        </div>
+
+        <div>
+            <form action="#" method="post">
+                <div>
+                    <h2>ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА:</h2>
+                    <label for="usurname">ФАМИЛИЯ</label><br>
+                    <input type="text" id="usurname-id" name="usurname" value="Иванов" required/><br>
+                    <label for="uname">ИМЯ</label><br>
+                    <input type="text" id="uname-id" name="uname" value="Петр" required/><br>
+                    <label for="uname">ОТЧЕСТВО</label><br>
+                    <input type="text" id="uname-id" name="uname" value="Александрович"/>
+                </div>
+                <div> 
+                    <h2>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
+                    <label>
+                        <input type="radio" id="radio-impression-positive-id" name="radio-impression" checked/> Скорее положительное
+                    </label>
+                    <label>
+                        <input type="radio" id="radio-impression-negative-id" name="radio-impression"/> Скорее отрицательное
+                    </label>
+                </div>
+                <div> 
+                    <h2>ДАТА ВАШЕЙ ПОЕЗДКИ:</h2>
+                    <label for="trip-beg" required>ДАТА ПРИЕЗДА:</label><br>
+                    <input type="date" id="trip-beg-id" name="trip-beg" required/><br>
+                    <label for="trip-duration">ДЛИТЕЛЬНОСТЬ ПРЕБЫВАНИЯ</label><br>
+                    <input type="number" id="trip-duration-id" name="trip-duration" required/><br>
+                    <label for="trip-end">ДАТА ОТЬЕЗДА:</label><br>
+                    <input type="date" id="trip-end-id" name="trip-end" required/>
+                </div>
+                
+                <div>
+                    <h2>КОЛ-ВО ПУТЕШЕСТВЕННИКОВ:</h2>
+                    <label for="num-of-people">КОЛИЧЕСТВО ПУТЕШЕСТВЕННИКОВ:</label><br>
+                    <input type="number" id="num-of-people-id" name="num-of-people" value="2" required/><br>
+                    <!-- JS is needed to handle clicks on a picker: add form elements-->
+                </div>
+                
+                <div>
+                    <h2>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
+                    <label>
+                        <input type="checkbox" id="devi-check-id" name="sights-check" checked/> Мост Дьявола
+                    </label>
+                    <label>
+                        <input type="checkbox" id="slide-park-check-id" name="sights-check"/> Слайд-парк
+                    </label>
+                    <label>
+                        <input type="checkbox" id="bell-mount-check-id" name="sights-check" checked/> Гора-Колокол
+                    </label>
+                    <label>
+                        <input type="checkbox" id="redrocks-check-id" name="sights-check" checked/> Красные скалы
+                    </label>
+                </div>
+                <div>
+                    <h2>ЗАГРУЗИТЕ ФОТОГРАФИИ:</h2> 
+                    <input type="button" value="ВЫБРАТЬ ФОТОГРАФИИ"/>
+                </div>
+                <div>
+                    <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ"
+                </div>
+            </form>
+        </div>
+
+    </div> <!-- body-->
+
+      
+      <footer>
+          <div>
+              <p>#VISITSEDONA</p>
+          </div>
+          <div class="sedona-socials">
+              <a href="https://twitter.com"></a>
+              <a href="https://facebook.com"></a>
+              <a href="https://youtube.com"></a>
+          </div>
+      </footer>
+
+    <!-- <script src="js/script.js"></script> -->
+  </body>
+</html>
