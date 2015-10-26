@@ -1,113 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+  <head >
     <meta charset="utf-8">
     <title>HTML Academy: sedona</title>
     <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
-      <header>
-          <div>
+      <header class="head-main">
+          <div class="site-logo">
                <!-- logo -->
                <img src="images/sedona-logo.png" width="138" height="70" alt="">
               
           </div>
-          <div>
+          <div class="menu">
                <!-- menu -->
                <img src="http://placehold.it/23x22" width="23" height="22" alt="">
                <nav>
                     <ul>
-                        <li><a href="#">ИНФОРМАЦИЯ</a></li>
-                        <li><a href="#">ФОТО И ВИДЕО</a></li>
-                        <li><a href="#">КАРТА ШТАТА</a></li>
-                        <li><a href="#">ГОСТИНИЦЫ</a></li>
+                        <li class="menu__item"><a href="#">КАРТА ШТАТА</a></li>
+                        <li class="menu__item"><a href="#">ИНФОРМАЦИЯ</a></li>
+                        <li class="menu__item"><a href="#">ФОТО И ВИДЕО</a></li>
+                        <li class="menu__item"><a href="#">ГОСТИНИЦЫ</a></li>
                     </ul>
                </nav>
           </div>
       </header>
       
-    <div>
-    
-        <div>
-            <div>
-                <img src="img/WELCOME.png" width="196" height="66" alt="Welcome to the gorgeous">
-                <img src="img/SEDONA.png" width="280" height="48" alt="Sedona">
-                <img src="img/Because-the-Grand-Canyon.png" width="197" height="54" alt="Because the Grand Canyon sucks!">
+    <div class="contents">
+        <div class="welcome-sedona">
+            <div class="welcome-sedaona__images">
+                <img class="centered-img" src="img/WELCOME.png" width="196" height="66" alt="Welcome to the gorgeous">
+                <img class="centered-img" src="img/SEDONA.png" width="280" height="48" alt="Sedona">
+                <img class="centered-img" src="img/Because-the-Grand-Canyon.png" width="197" height="54" alt="Because the Grand Canyon sucks!">
             </div>
-            <!-- For CSS: src="img/background-photo.png" width="320" height="512" -->
-        </div>
-
-
-        <div>
-            <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        </div>
-
-        <div>
-            <div>
-                <h2>НАСТОЯЩИЙ ГОРОДОК</h2>
-                <p>№1</p>
-                <p>СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-                <img src="img/true-town.png" height="256" width="512" alt="">
-                
+            <div class="welcome-sedona__sedona">
+                <h2 class="sedona-centered-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+                <p class="sedona-centered-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </div>
+        </div>
+        <div class="reasons-to-go">
             <div>
-                <div>
-                    <img src="img/house.png" height="37" width="37" alt="">
-                    <div>
-                        <h2>ЖИЛЬЕ</h2>
-                        <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
-                    </div>
+                <div class="key-reason-to-go">
+                    <h2 class="key-reason-to-go__title">НАСТОЯЩИЙ ГОРОДОК</h2>
+                    <p class="key-reason-to-go__number">№1</p>
+                    <p class="key-reason-to-go__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                    <img src="img/true-town.png" height="256" width="512" alt="">
                 </div>
-                <div>
-                    <img src="img/gift.png" height="38" width="32" alt="">
-                    <div> 
-                        <h2>СУВЕНИРЫ</h2>
-                        <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>                    
+                <div class="reasons-to-stay-in">
+                    <div class="why-to-stay-in">
+                        <img src="img/house.png" height="37" width="37" alt="">
+                        <div class="why-to-stay-in__reason">
+                            <h2 class="why-to-stay-in__title">ЖИЛЬЕ</h2>
+                            <p class="why-to-stay-in__text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src="img/burger.png" height="35" width="37" alt="">
-                    <div>
-                        <h2>ЕДА</h2>
-                        <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                    <div class="why-to-stay-in">
+                        <img src="img/gift.png" height="38" width="32" alt="">
+                        <div class="why-to-stay-in__reason"> 
+                            <h2 class="why-to-stay-in__title">СУВЕНИРЫ</h2>
+                            <p class="why-to-stay-in__text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>                    
+                        </div>
+                    </div>
+                    <div class="why-to-stay-in">
+                        <img src="img/burger.png" height="35" width="37" alt="">
+                        <div class="why-to-stay-in__reason">
+                            <h2 class="why-to-stay-in__title">ЕДА</h2>
+                            <p class="why-to-stay-in__text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>    
+            
+            <div class="key-reason-to-go">
+                <div>
+                    <h2 class="key-reason-to-go__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
+                    <p class="key-reason-to-go__number">№2</p>
+                    <p class="key-reason-to-go__text">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ, КОНЕЧНО, ВЫ ОСМЕЛИТЕСЬ</p>
+                </div>
+                <img src="img/devil-bridge.png" height="256" width="512" alt="">
+            </div>
 
-        <div>
-            <div>
-                <h2>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
-                <p>№2</p>
-                <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ, КОНЕЧНО, ВЫ ОСМЕЛИТЕСЬ</p>
+            <div class="reason-to-go">
+                <h2 class="reason-to-go__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+                <p class="reason-to-go__number">№3</p>
+                <p class="reason-to-go__text">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
             </div>
-            <img src="img/devil-bridge.png" height="256" width="512" alt="">
-        </div>
-
-        <div>
-            <div>
-                <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-                <p>№3</p>
-                <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+            <div class="reason-to-go">
+                <h2 class="reason-to-go__title">КРАСИВАЯ ДОРОГА</h2>
+                <p class="reason-to-go__number">№4</p>
+                <p class="reason-to-go__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
             </div>
-            <div>
-                <h2>КРАСИВАЯ ДОРОГА</h2>
-                <p>№4</p>
-                <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
-            </div>
-            <div>
-                <h2>МАЛО ТУРИСТОВ</h2>
-                <p>№5</p>
-                <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+            <div class="reason-to-go">
+                <h2 class="reason-to-go__title">МАЛО ТУРИСТОВ</h2>
+                <p class="reason-to-go__number">№5</p>
+                <p class="reason-to-go__text">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
             </div>
         </div>
-
-        <div>
+        
+        <div class="provide-feedback">
             <div>
-                <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-                <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-                <input type="button" value="НАЙТИ ГОСТИНИЦУ" name="get-form-btn">
+                <h2 class="sedona-centered-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+                <p class="sedona-centered-text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+                <input class="sedona-button" type="button" value="НАЙТИ ГОСТИНИЦУ" name="get-form-btn">
             </div>
             <img src="img/map.png" height="350" width="320" alt="">            
         </div>
@@ -115,16 +109,15 @@
 
       
       <footer>
-          <div>
-              <p>#VISITSEDONA</p>
-          </div>
+          <p class="sedona-centered-title">#VISITSEDONA</p>
           <div class="sedona-socials">
               <a href="https://twitter.com"></a>
               <a href="https://facebook.com"></a>
               <a href="https://youtube.com"></a>
           </div>
-          <div>
-             <p>РАЗРАБОТАНО</p>  
+          <div class="who-did-this">
+             <p>РАЗРАБОТАНО</p>
+             <img src="images/htmlacademy-logo.png" height="34" width="27" alt="">           
           </div>
       </footer>
 

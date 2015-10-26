@@ -6,101 +6,99 @@
     <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
-      <header>
-          <div>
+      <header class="head-main">
+          <div class="site-logo">
                <!-- logo -->
                <img src="http://placehold.it/138x70" width="138" height="70" alt="">
               
           </div>
-          <div>
+          <div class="head-main">
                <!-- menu -->
                <img src="http://placehold.it/23x22" width="23" height="22" alt="">
                <nav>
                     <ul>
-                        <li><a href="#">ИНФОРМАЦИЯ</a></li>
-                        <li><a href="#">ФОТО И ВИДЕО</a></li>
-                        <li><a href="#">КАРТА ШТАТА</a></li>
-                        <li><a href="#">ГОСТИНИЦЫ</a></li>
+                        <li class="menu__item"><a href="#">ИНФОРМАЦИЯ</a></li>
+                        <li class="menu__item"><a href="#">ФОТО И ВИДЕО</a></li>
+                        <li class="menu__item"><a href="#">КАРТА ШТАТА</a></li>
+                        <li class="menu__item"><a href="#">ГОСТИНИЦЫ</a></li>
                     </ul>
                </nav>
           </div>
       </header>
       
-    <div>
+    <div class="contents">
     
-        <div>
-            <div>
-                
-                <img src="img/SEDONA.png" width="280" height="48" alt="Sedona">
-
+        <div class="welcome-sedaona">
+            <div class="welcome-sedaona__images">           
+                <img class="centered-img" src="img/SEDONA.png" width="280" height="48" alt="Sedona">
             </div>
-            <!-- For CSS: src="img/background-photo.png" width="320" height="512" -->
+            <div class="welcome-sedona__sedona">
+                <h2 class="sedona-centered-title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+                <p class="sedona-centered-text">ПОМГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
+            </div>
         </div>
 
-
-        <div>
-            <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
-            <p>ПОМГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
-        </div>
-
-        <div>
+        <div class="form-wrapper">
             <form action="#" method="post">
-                <div>
-                    <h2>ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА:</h2>
-                    <label for="usurname">ФАМИЛИЯ</label><br>
-                    <input type="text" id="usurname-id" name="usurname" value="Иванов" required/><br>
-                    <label for="uname">ИМЯ</label><br>
-                    <input type="text" id="uname-id" name="uname" value="Петр" required/><br>
-                    <label for="uname">ОТЧЕСТВО</label><br>
-                    <input type="text" id="uname-id" name="uname" value="Александрович"/>
+                <div class="form-wrapper__block">
+                    <h2 class="sedona-centered-title">ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА:</h2>
+                    <label class="form-wrapper__label" for="usurname">ФАМИЛИЯ</label><br>
+                    <input class="form-wrapper__input" type="text" id="usurname-id" name="usurname" value="Иванов" required/><br>
+                    <label class="form-wrapper__label" for="uname">ИМЯ</label><br>
+                    <input class="form-wrapper__input" type="text" id="uname-id" name="uname" value="Петр" required/><br>
+                    <label class="form-wrapper__label" for="uname">ОТЧЕСТВО</label><br>
+                    <input class="form-wrapper__input" type="text" id="uname-id" name="uname" value="Александрович"/>
                 </div>
-                <div> 
-                    <h2>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
-                    <label>
-                        <input type="radio" id="radio-impression-positive-id" name="radio-impression" checked/> Скорее положительное
+                <div class="form-wrapper__block"> 
+                    <h2 class="sedona-centered-title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
+                    <label class="form-wrapper__boldlable">
+                        <input class="form-wrapper__radio" type="radio" id="radio-impression-positive-id" name="radio-impression" checked/> Скорее положительное
                     </label>
-                    <label>
-                        <input type="radio" id="radio-impression-negative-id" name="radio-impression"/> Скорее отрицательное
+                    <label class="form-wrapper__boldlable">
+                        <input class="form-wrapper__radio" type="radio" id="radio-impression-negative-id" name="radio-impression"/> Скорее отрицательное
                     </label>
                 </div>
-                <div> 
-                    <h2>ДАТА ВАШЕЙ ПОЕЗДКИ:</h2>
-                    <label for="trip-beg" required>ДАТА ПРИЕЗДА:</label><br>
-                    <input type="date" id="trip-beg-id" name="trip-beg" required/><br>
-                    <label for="trip-duration">ДЛИТЕЛЬНОСТЬ ПРЕБЫВАНИЯ</label><br>
-                    <input type="number" id="trip-duration-id" name="trip-duration" required/><br>
-                    <label for="trip-end">ДАТА ОТЬЕЗДА:</label><br>
-                    <input type="date" id="trip-end-id" name="trip-end" required/>
+                <div class="form-wrapper__block"> 
+                    <h2 class="form-block-title">ДАТА ВАШЕЙ ПОЕЗДКИ:</h2>
+                    <label class="form-wrapper__label" for="trip-beg" required>ДАТА ПРИЕЗДА:</label><br>
+                    <input class="form-wrapper__date" type="date" id="trip-beg-id" name="trip-beg" required/><br>
+                    <label class="form-wrapper__label" for="trip-duration">ДЛИТЕЛЬНОСТЬ ПРЕБЫВАНИЯ</label><br>
+                    <input class="form-wrapper__date" type="number" id="trip-duration-id" name="trip-duration" required/><br>
+                    <label class="form-wrapper__label" for="trip-end">ДАТА ОТЬЕЗДА:</label><br>
+                    <input class="form-wrapper__date" type="date" id="trip-end-id" name="trip-end" required/>
                 </div>
                 
-                <div>
-                    <h2>КОЛ-ВО ПУТЕШЕСТВЕННИКОВ:</h2>
-                    <label for="num-of-people">КОЛИЧЕСТВО ПУТЕШЕСТВЕННИКОВ:</label><br>
-                    <input type="number" id="num-of-people-id" name="num-of-people" value="2" required/><br>
+                <div class="form-wrapper__block">
+                    <h2 class="sedona-centered-title">КОЛ-ВО ПУТЕШЕСТВЕННИКОВ:</h2>
+                    <label class="form-wrapper__label" for="num-of-people">КОЛИЧЕСТВО ПУТЕШЕСТВЕННИКОВ:</label><br>
+                    <input class="form-wrapper__number" type="number" id="num-of-people-id" name="num-of-people" value="2" required/><br>
                     <!-- JS is needed to handle clicks on a picker: add form elements-->
                 </div>
                 
-                <div>
-                    <h2>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
-                    <label>
-                        <input type="checkbox" id="devi-check-id" name="sights-check" checked/> Мост Дьявола
+                <div class="form-wrapper__block">
+                    <h2 class="sedona-centered-title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
+                    <label class="form-wrapper__boldlable">
+                        <input class="form-wrapper__check" type="checkbox" id="devi-check-id" name="sights-check" checked/> Мост Дьявола
                     </label>
-                    <label>
-                        <input type="checkbox" id="slide-park-check-id" name="sights-check"/> Слайд-парк
+                    <label class="form-wrapper__boldlable">
+                        <input class="form-wrapper__check" type="checkbox" id="slide-park-check-id" name="sights-check"/> Слайд-парк
                     </label>
-                    <label>
-                        <input type="checkbox" id="bell-mount-check-id" name="sights-check" checked/> Гора-Колокол
+                    <label class="form-wrapper__boldlable">
+                        <input class="form-wrapper__check" type="checkbox" id="bell-mount-check-id" name="sights-check" checked/> Гора-Колокол
                     </label>
-                    <label>
-                        <input type="checkbox" id="redrocks-check-id" name="sights-check" checked/> Красные скалы
+                    <label class="form-wrapper__boldlable">
+                        <input class="form-wrapper__check" type="checkbox" id="redrocks-check-id" name="sights-check" checked/> Красные скалы
                     </label>
                 </div>
-                <div>
-                    <h2>ЗАГРУЗИТЕ ФОТОГРАФИИ:</h2> 
-                    <input type="button" value="ВЫБРАТЬ ФОТОГРАФИИ"/>
+                <div class="form-wrapper__block">
+                    <h2 class="sedona-centered-title">ЗАГРУЗИТЕ ФОТОГРАФИИ:</h2> 
+                    <input class="sedona-button sedona-button--disabled" type="button" value="ВЫБРАТЬ ФОТОГРАФИИ"/>
+                    <div class="photos-block">
+                        
+                    </div>
                 </div>
-                <div>
-                    <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ"
+                <div class="form-wrapper__block">
+                    <input class="sedona-button  sedona-button--disabled" type="submit" value="ОТПРАВИТЬ ОТЗЫВ"/>
                 </div>
             </form>
         </div>
@@ -109,9 +107,7 @@
 
       
       <footer>
-          <div>
-              <p>#VISITSEDONA</p>
-          </div>
+          <p class="sedona-centered-title">#VISITSEDONA</p>
           <div class="sedona-socials">
               <a href="https://twitter.com"></a>
               <a href="https://facebook.com"></a>
